@@ -16,7 +16,7 @@ public class calcular_areas {
 
 	        System.out.println("El área del triángulo es: " + area);
 
-	        scanner.close();
+	        
 	    }
 
 	    public static double calcularArea(int lado1, int lado2) {
