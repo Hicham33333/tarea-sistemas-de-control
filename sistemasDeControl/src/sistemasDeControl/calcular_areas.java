@@ -32,6 +32,18 @@ public class calcular_areas {
 		double volumen = calcularVolumenCubo(lado);
 
 		System.out.println("El volumen del cubo es: " + volumen);
+		
+		
+    	
+    	System.out.println("Introduce el radio de la cricunferencia: ");
+    	radio = scanner.nextDouble();
+    	
+    	System.out.println("El área de la circunferenia es: " + CalcularAreaCircunferencia (radio));
+    	
+    	System.out.println("Introduce el radio de la cricunferencia: ");
+    	radio = scanner.nextDouble();
+    	System.out.println("El área de la circunferenia es: " + CalcularPerimetroCircunferencia(radio));
+    	
 
 	}
 
@@ -51,5 +63,17 @@ public class calcular_areas {
 	public static double calcularVolumenCubo(double lado) {
 
 		return Math.pow(lado, 3);
+	}
+	public static double CalcularAreaCircunferencia (double radio) {
+		
+    	double area = 3.14 * radio * radio;
+    	 
+		return area;
+	}
+	public static double CalcularPerimetroCircunferencia(double radio) {
+		
+    	double area = 2 * 3.14 * radio;
+    	
+		return area;
 	}
 }
